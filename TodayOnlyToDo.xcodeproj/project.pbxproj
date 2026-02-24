@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1F0B49E12F4C8B8E00E47A3B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B49922F4C848300E47A3B /* WidgetKit.framework */; };
+		1F0B49E22F4C8B8E00E47A3B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B49942F4C848300E47A3B /* SwiftUI.framework */; };
+		1F940FB52F4CA02F0070F497 /* TodayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1F0B49E02F4C8B8E00E47A3B /* TodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1F0B49562F4C79A500E47A3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,28 +27,106 @@
 			remoteGlobalIDString = 1F0B49472F4C79A200E47A3B;
 			remoteInfo = TodayOnlyToDo;
 		};
+		1F940FB62F4CA02F0070F497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0B49402F4C79A200E47A3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0B49DF2F4C8B8E00E47A3B;
+			remoteInfo = TodayWidgetExtension;
+		};
+		1F940FB92F4CA03D0070F497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0B49402F4C79A200E47A3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0B49DF2F4C8B8E00E47A3B;
+			remoteInfo = TodayWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F940FB82F4CA02F0070F497 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F940FB52F4CA02F0070F497 /* TodayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F0B49482F4C79A200E47A3B /* TodayOnlyToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayOnlyToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0B49552F4C79A500E47A3B /* TodayOnlyToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayOnlyToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0B495F2F4C79A500E47A3B /* TodayOnlyToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayOnlyToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0B49922F4C848300E47A3B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1F0B49942F4C848300E47A3B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1F0B49AA2F4C848C00E47A3B /* TodayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidgetExtension.entitlements; sourceTree = "<group>"; };
+		1F0B49E02F4C8B8E00E47A3B /* TodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1F0B49FD2F4C8BC600E47A3B /* Exceptions for "TodayOnlyToDo" folder in "TodayWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Extensions.swift,
+				Intents/AddTaskIntent.swift,
+				Intents/CompleteTaskIntent.swift,
+				Intents/OpenTodayIntent.swift,
+				Intents/TaskStorage.swift,
+				Models/TodoTask.swift,
+				Services/NotificationManager.swift,
+				Services/PersistenceManager.swift,
+				ViewModel/TaskViewModel.swift,
+			);
+			target = 1F0B49DF2F4C8B8E00E47A3B /* TodayWidgetExtension */;
+		};
+		1F940FDD2F4E2F560070F497 /* Exceptions for "TodayOnlyToDoTests" folder in "TodayOnlyToDo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MockClasses.swift,
+			);
+			target = 1F0B49472F4C79A200E47A3B /* TodayOnlyToDo */;
+		};
+		1FD0D9062F4C9E850082B0FF /* Exceptions for "TodayWidget" folder in "TodayWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WidgetInfo.plist,
+			);
+			target = 1F0B49DF2F4C8B8E00E47A3B /* TodayWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1F0B494A2F4C79A200E47A3B /* TodayOnlyToDo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1F0B49FD2F4C8BC600E47A3B /* Exceptions for "TodayOnlyToDo" folder in "TodayWidgetExtension" target */,
+			);
 			path = TodayOnlyToDo;
 			sourceTree = "<group>";
 		};
 		1F0B49582F4C79A500E47A3B /* TodayOnlyToDoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1F940FDD2F4E2F560070F497 /* Exceptions for "TodayOnlyToDoTests" folder in "TodayOnlyToDo" target */,
+			);
 			path = TodayOnlyToDoTests;
 			sourceTree = "<group>";
 		};
 		1F0B49622F4C79A500E47A3B /* TodayOnlyToDoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TodayOnlyToDoUITests;
+			sourceTree = "<group>";
+		};
+		1F0B49962F4C848300E47A3B /* TodayWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1FD0D9062F4C9E850082B0FF /* Exceptions for "TodayWidget" folder in "TodayWidgetExtension" target */,
+			);
+			path = TodayWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +153,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F0B49DD2F4C8B8E00E47A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0B49E22F4C8B8E00E47A3B /* SwiftUI.framework in Frameworks */,
+				1F0B49E12F4C8B8E00E47A3B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1F0B493F2F4C79A200E47A3B = {
 			isa = PBXGroup;
 			children = (
+				1F0B49AA2F4C848C00E47A3B /* TodayWidgetExtension.entitlements */,
 				1F0B494A2F4C79A200E47A3B /* TodayOnlyToDo */,
 				1F0B49582F4C79A500E47A3B /* TodayOnlyToDoTests */,
 				1F0B49622F4C79A500E47A3B /* TodayOnlyToDoUITests */,
+				1F0B49962F4C848300E47A3B /* TodayWidget */,
+				1F0B49912F4C848300E47A3B /* Frameworks */,
 				1F0B49492F4C79A200E47A3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +184,18 @@
 				1F0B49482F4C79A200E47A3B /* TodayOnlyToDo.app */,
 				1F0B49552F4C79A500E47A3B /* TodayOnlyToDoTests.xctest */,
 				1F0B495F2F4C79A500E47A3B /* TodayOnlyToDoUITests.xctest */,
+				1F0B49E02F4C8B8E00E47A3B /* TodayWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1F0B49912F4C848300E47A3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F0B49922F4C848300E47A3B /* WidgetKit.framework */,
+				1F0B49942F4C848300E47A3B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +208,13 @@
 				1F0B49442F4C79A200E47A3B /* Sources */,
 				1F0B49452F4C79A200E47A3B /* Frameworks */,
 				1F0B49462F4C79A200E47A3B /* Resources */,
+				1F940FB82F4CA02F0070F497 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F940FB72F4CA02F0070F497 /* PBXTargetDependency */,
+				1F940FBA2F4CA03D0070F497 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1F0B494A2F4C79A200E47A3B /* TodayOnlyToDo */,
@@ -163,6 +272,28 @@
 			productReference = 1F0B495F2F4C79A500E47A3B /* TodayOnlyToDoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1F0B49DF2F4C8B8E00E47A3B /* TodayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0B49F32F4C8B8F00E47A3B /* Build configuration list for PBXNativeTarget "TodayWidgetExtension" */;
+			buildPhases = (
+				1F0B49DC2F4C8B8E00E47A3B /* Sources */,
+				1F0B49DD2F4C8B8E00E47A3B /* Frameworks */,
+				1F0B49DE2F4C8B8E00E47A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1F0B49962F4C848300E47A3B /* TodayWidget */,
+			);
+			name = TodayWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = TodayWidgetExtension;
+			productReference = 1F0B49E02F4C8B8E00E47A3B /* TodayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +315,9 @@
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = 1F0B49472F4C79A200E47A3B;
 					};
+					1F0B49DF2F4C8B8E00E47A3B = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 1F0B49432F4C79A200E47A3B /* Build configuration list for PBXProject "TodayOnlyToDo" */;
@@ -203,6 +337,7 @@
 				1F0B49472F4C79A200E47A3B /* TodayOnlyToDo */,
 				1F0B49542F4C79A500E47A3B /* TodayOnlyToDoTests */,
 				1F0B495E2F4C79A500E47A3B /* TodayOnlyToDoUITests */,
+				1F0B49DF2F4C8B8E00E47A3B /* TodayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +358,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F0B495D2F4C79A500E47A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0B49DE2F4C8B8E00E47A3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +395,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F0B49DC2F4C8B8E00E47A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +414,16 @@
 			isa = PBXTargetDependency;
 			target = 1F0B49472F4C79A200E47A3B /* TodayOnlyToDo */;
 			targetProxy = 1F0B49602F4C79A500E47A3B /* PBXContainerItemProxy */;
+		};
+		1F940FB72F4CA02F0070F497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0B49DF2F4C8B8E00E47A3B /* TodayWidgetExtension */;
+			targetProxy = 1F940FB62F4CA02F0070F497 /* PBXContainerItemProxy */;
+		};
+		1F940FBA2F4CA03D0070F497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0B49DF2F4C8B8E00E47A3B /* TodayWidgetExtension */;
+			targetProxy = 1F940FB92F4CA03D0070F497 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,8 +552,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TodayOnlyToDo/TodayOnlyToDo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 293MU6MC59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -402,6 +563,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,8 +586,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TodayOnlyToDo/TodayOnlyToDo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 293MU6MC59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -433,6 +597,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,6 +695,70 @@
 			};
 			name = Release;
 		};
+		1F0B49F42F4C8B8F00E47A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TodayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 293MU6MC59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayWidget/WidgetInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = harshit.TodayOnlyToDo.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F0B49F52F4C8B8F00E47A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TodayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 293MU6MC59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayWidget/WidgetInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = harshit.TodayOnlyToDo.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,6 +794,15 @@
 			buildConfigurations = (
 				1F0B49702F4C79A500E47A3B /* Debug */,
 				1F0B49712F4C79A500E47A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0B49F32F4C8B8F00E47A3B /* Build configuration list for PBXNativeTarget "TodayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0B49F42F4C8B8F00E47A3B /* Debug */,
+				1F0B49F52F4C8B8F00E47A3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
